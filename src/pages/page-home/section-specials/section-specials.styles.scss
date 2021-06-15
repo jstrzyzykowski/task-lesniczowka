@@ -26,6 +26,15 @@
     transform: translate(100%, -50%);
     z-index: 1;
 
+    @media screen and (max-width: 992px) {
+      top: 0;
+      transform: scale(0.8) translateX(50%);
+    }
+
+    @media screen and (max-width: 688) {
+      transform: scale(0.7) translateX(50%);
+    }
+
     &::before {
       position: absolute;
       top: 50%;
@@ -49,6 +58,15 @@
       transform: translate(-30%,-50%);
       content: url('../../../assets/vectors/icon-arrow-next.svg');
     }
+
+    @media screen and (max-width: 992px) {
+      top: 0;
+      transform: scale(0.8) translateX(-50%);
+    }
+
+    @media screen and (max-width: 688) {
+      transform: scale(0.7) translateX(-50%);
+    }
   }
 
   .BrainhubCarousel__arrows {
@@ -58,11 +76,6 @@
     border: none;
     border-radius: 50%;
     transition: background-color .2s ease-out;
-
-    @media screen and (max-width: 992px) {
-      width: 40px;
-      height: 40px;
-    }
 
     &:hover,
     &:hover:enabled {
