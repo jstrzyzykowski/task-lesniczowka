@@ -44,8 +44,8 @@ export default function Footer() {
         </div>
       </div>
       <div className='bar-container'>
-        <p>Wszelkie prawa zastrzeżone Leśniczówka 2021</p>
-        <p>Projekt strony internetowej: redMustang&#174;</p>
+        <p className='copyright'>Wszelkie prawa zastrzeżone Leśniczówka 2021</p>
+        <p className='author'>Projekt strony internetowej: redMustang&#174;</p>
       </div>
     </div>
   );

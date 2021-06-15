@@ -22,7 +22,7 @@ export default function SectionSpecials() {
           numberOfSlides: 3,
          },
        },
-     ]}  
+     ]}
       >
         <div className='carousel-item'>
           <img className='carousel-item-image' src={CarouselImageOne} alt='zdjęcie wędliny tradycyjne'/>
