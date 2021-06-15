@@ -4,11 +4,18 @@
   background-image: url('../../../assets/vectors/hero-logo-bg.svg');
   background-repeat: no-repeat;
   background-position: 40% 0;
-  transition: 0.2s ease-out;
   overflow: hidden;
 
   @media screen and (max-width: 992px){
     background-position: 60% 0;
+  }
+
+  @media screen and (max-width: 688px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
   }
 
   &::before {
@@ -32,7 +39,6 @@
     top: 30%;
     left: 20%;
     z-index: 1;
-    transition: 0.3s ease-out;
 
     @media screen and (max-width: 1312px){
       left: 8%;
@@ -40,11 +46,19 @@
     }
 
     @media screen and (max-width: 992px){
-      // left: 5%;
-      // left: 0;
-      // padding-left: 40px;
       top: 25%;
       width: auto;
+    }
+
+    @media screen and (max-width: 688px){
+      position: static;
+      width: auto;
+      margin: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
     &::before {
@@ -63,6 +77,10 @@
       @media screen and (max-width: 992px){
         font-size: 58px;
       }
+
+      @media screen and (max-width: 688px){
+        padding: 0 20px;
+      }
     }
 
     .desc-sub {
@@ -72,8 +90,6 @@
       line-height: 1.6em;
 
       @media screen and (max-width: 992px){
-        // font-size: 58px;
-        // font-size: 16px;
         width: 70%;
       }
 

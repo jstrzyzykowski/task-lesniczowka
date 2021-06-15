@@ -32,7 +32,7 @@
     }
 
     @media screen and (max-width: 688px) {
-      transform: scale(0.7) translate(50%, -50%);
+      transform: scale(1) translate(50%, -50%);
     }
 
     &::before {
@@ -65,7 +65,7 @@
     }
 
     @media screen and (max-width: 688px) {
-      transform: scale(0.7) translate(-50%, -50%);
+      transform: scale(1) translate(-50%, -50%);
     }
   }
 
@@ -129,7 +129,11 @@
       align-items: flex-end;
 
       @media screen and (max-width: 992px) {
-        transform: scale(0.7) translate(-50%, -50%);
+        padding: 10px 15px;
+      }
+
+      @media screen and (max-width: 688px) {
+        padding: 30px 40px 30px 30px;
       }
 
       .title {
@@ -137,6 +141,16 @@
         font-size: 36px;
         line-height: 62px;
         align-self: flex-start;
+
+        @media screen and (max-width: 992px) {
+          font-size: 24px;
+          line-height: 48px;
+        }
+
+        @media screen and (max-width: 688px) {
+          font-size: 36px;
+          line-height: 62px;
+        }
       }
 
       .special-more {
@@ -148,12 +162,30 @@
         &:hover {
           .icon-more-arrow {
             transform: translateX(12px);
+
+            @media screen and (max-width: 992px) {
+              transform: scale(0.8) translateX(12px);
+            }
+
+            @media screen and (max-width: 688px) {
+              transform: translateX(12px);
+            }
           }
 
           span {
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             transform: translateX(20px);
+
+            @media screen and (max-width: 992px) {
+              transform: translateX(6px);
+              border-radius: 4px;
+            }
+
+            @media screen and (max-width: 688px) {
+              border-radius: 8px;
+              transform: translateX(20px);
+            }
           }
         }
 
@@ -161,6 +193,16 @@
           transition: 0.3s ease-out;
           box-sizing: content-box;
           padding: 10px 0;
+
+          @media screen and (max-width: 992px) {
+            padding: 5px;
+            transform: scale(0.8);
+          }
+
+          @media screen and (max-width: 688px) {
+            padding: 10px 0;
+            transform: scale(1);
+          }
         }
 
         span {
@@ -172,6 +214,16 @@
           padding: 10px 20px;
           transition: 0.2s ease-out;
           transition-delay: 0.2s;
+
+          @media screen and (max-width: 992px) {
+            padding: 5px 10px;
+            font-size: 12px;
+          }
+
+          @media screen and (max-width: 688px) {
+            padding: 10px 20px;
+            font-size: 14px;
+          }
         }
       }
     }

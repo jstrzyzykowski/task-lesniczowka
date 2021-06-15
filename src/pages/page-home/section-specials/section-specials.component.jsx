@@ -24,6 +24,18 @@ export default function SectionSpecials() {
        },
      ]}
      breakpoints={{
+      992: {
+        plugins: [
+          'infinite',
+          'arrows',
+         {
+           resolve: slidesToShowPlugin,
+           options: {
+            numberOfSlides: 2
+           }
+         },
+       ]
+      },
       688: {
         plugins: [
           'infinite',
@@ -35,8 +47,8 @@ export default function SectionSpecials() {
            }
          },
        ]
-      }}
-    }
+      }
+    }}
       >
         <div className='carousel-item'>
           <img className='carousel-item-image' src={CarouselImageOne} alt='zdjęcie wędliny tradycyjne'/>
@@ -48,7 +60,6 @@ export default function SectionSpecials() {
             </div>
           </div>
         </div>
-
         <div className='carousel-item'>
           <img className='carousel-item-image' src={CarouselImageOne} alt='zdjęcie wędliny dojrzewające'/>
           <div className='description-container'>
@@ -59,7 +70,6 @@ export default function SectionSpecials() {
             </div>
           </div>
         </div>
-
         <div className='carousel-item'>
           <img className='carousel-item-image' src={CarouselImageTwo} alt='zdjęcie wędliny wędzonki'/>
           <div className='description-container'>
@@ -70,7 +80,6 @@ export default function SectionSpecials() {
             </div>
           </div>
         </div>
-
       </Carousel>
     </div>
   );
