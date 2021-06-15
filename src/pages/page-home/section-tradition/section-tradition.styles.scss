@@ -5,6 +5,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  overflow: auto;
 
   .content-container {
     height: 950px;
@@ -52,6 +53,10 @@
         line-height: 24px;
         width: 420px;
         margin-bottom: 3rem;
+
+        @media screen and (max-width: 992px){
+          width: auto;
+        }
       }
 
       .tradition-more-container {

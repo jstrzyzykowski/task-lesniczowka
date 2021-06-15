@@ -16,7 +16,7 @@ export default function SectionHero() {
         </p>
       </div>
       <div className='hero-image-container'>
-        <img src={Sausages} alt="" />
+        <img className='hero-image' src={Sausages} alt="Zdjęcie kiełbas" />
       </div>
       <FeatureList/>
       <ShopWidget/>

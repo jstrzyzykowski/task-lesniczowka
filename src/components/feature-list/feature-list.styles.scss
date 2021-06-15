@@ -8,4 +8,13 @@
   display: flex;
   justify-content: space-evenly;
   z-index: 1;
+
+  @media screen and (max-width: 1312px){
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 30px;
+  }
 }

@@ -12,6 +12,10 @@
   z-index: 10;
   transition: 0.2s ease-out;
 
+  @media screen and (max-width: 1312px){
+    padding: 0 40px;
+  }
+
   &.scrolled {
     height: 80px;
     position: fixed;
@@ -33,6 +37,10 @@
 
   .logo {
     margin-right: 50px;
+
+    @media screen and (max-width: 1312px){
+      margin-right: 20px;
+    }
   }
 
   .logo a {
@@ -43,10 +51,20 @@
     .logo-main {
       margin-right: 40px;
       transition: .2s ease-out;
+
+      @media screen and (max-width: 1312px){
+        height: 100px;
+        margin-right: 25px;
+      }
     }
 
     .logo-sub {
       transition: .2s ease-out;
+
+      @media screen and (max-width: 1312px){
+        width: auto;
+        height: 65px;
+      }
     }
   }
 
