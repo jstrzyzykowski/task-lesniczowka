@@ -11,7 +11,7 @@ import './navigation.styles.scss';
 
 export default function Navigation() {
   const {x, y} = useWindowScroll();
-  const [mobileToggle, setMobileToggle] = useState(true);
+  const [mobileToggle, setMobileToggle] = useState(false);
 
   return (
     <div className={`${y ? 'scrolled' : ''} navigation`}>
