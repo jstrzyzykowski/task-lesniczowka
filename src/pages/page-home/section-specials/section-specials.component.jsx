@@ -23,6 +23,18 @@ export default function SectionSpecials() {
          },
        },
      ]}
+     breakpoints={{
+      992: {
+        plugins: [
+         {
+           resolve: slidesToShowPlugin,
+           options: {
+            numberOfSlides: 2
+           }
+         },
+       ]
+      }}
+    }
       >
         <div className='carousel-item'>
           <img className='carousel-item-image' src={CarouselImageOne} alt='zdjęcie wędliny tradycyjne'/>
