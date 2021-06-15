@@ -1,0 +1,61 @@
+.section-hero {
+  min-height: 100vh;
+  position: relative;
+  background-image: url('../../../assets/vectors/hero-logo-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 40% 0;
+
+  &::before {
+    position: absolute;
+    content: url('../../../assets/vectors/hero-meat-left.svg');
+    top: 25%;
+    left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: url('../../../assets/vectors/hero-meat-right.svg');
+    bottom: 0;
+    right: 0;
+  }
+
+  .description {
+    width: 395px;
+    font-family: 'DM Serif Display', serif;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 1;
+
+    &::before {
+      content: url('../../../assets/vectors/pepper.svg');
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(20%, 140%);
+    }
+
+    .desc-main {
+      font-size: 68px;
+      line-height: 1em;
+      margin-bottom: 2.4rem;
+    }
+
+    .desc-sub {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.6em;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .hero-image-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

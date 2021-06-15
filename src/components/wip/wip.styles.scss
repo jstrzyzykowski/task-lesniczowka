@@ -1,0 +1,47 @@
+.section-wip {
+  min-height: 100vh;
+  background-color: #1F1C1D;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: url('../../assets/vectors/decoration-bg-owner.svg');
+    transform: translate(-20%, 20%);
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: url('../../assets/vectors/hero-meat-left.svg');
+    transform: scaleX(-1) translate(0, 40%);
+  }
+
+  .wip-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+
+    .text-header {
+      font-family: 'DM Serif Display', serif;
+      font-size: 68px;
+      line-height: 68px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 24px;
+    }
+
+    .text-description {
+      font-family: 'Roboto Slab', serif;
+      font-size: 18px;
+      line-height: 26px;
+      color: rgba(255, 255, 255, 0.4);
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}

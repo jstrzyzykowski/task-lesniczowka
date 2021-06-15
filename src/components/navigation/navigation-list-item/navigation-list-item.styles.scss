@@ -1,0 +1,59 @@
+.navigation-list-item {
+
+  @media screen and (max-width: 992px) {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1D1F;
+  }
+
+  .nav-link {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: url('../../../assets/vectors/pepper-one.svg');
+      transform: translate(-100%, 30%);
+      opacity: 0;
+      transition: 0.2s ease-out;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: url('../../../assets/vectors/pepper-two.svg');
+      transition: 0.4s ease-out;
+      transition-delay: 0.1s;
+      transform: translate(150%,-20%);
+      opacity: 0;
+    }
+
+    &.active {
+      color: #FF0000;
+      font-weight: bold;
+    }
+
+    &:hover {
+
+      &::after {
+        opacity: 1;
+        transform: translate(-50%, 20%) rotate(360deg);
+      }
+
+      &::before {
+        opacity: 1;
+        transform: translate(40%, -10%) rotate(-270deg);
+      }
+    }
+  }
+
+  
+}

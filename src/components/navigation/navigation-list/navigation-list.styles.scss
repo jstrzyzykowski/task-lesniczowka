@@ -1,0 +1,35 @@
+.navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  transition: 0.2s ease-out;
+
+  @media screen and (max-width: 992px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateY(-100%);
+
+    &.mobile-active {
+      top: 150px;
+      transform: translateY(0);
+    }
+  }
+}
+
+.scrolled {
+  .navigation-list {
+    @media screen and (max-width: 992px) {
+      top: 0;
+      transform: translateY(-100%);
+
+      &.mobile-active {
+        top: 0;
+        transform: translateY(80px);
+      }
+    }
+  }
+}

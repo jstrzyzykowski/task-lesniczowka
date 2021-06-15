@@ -1,0 +1,77 @@
+.section-owner {
+  min-height: 700px;
+  background-color: #1C1D1F;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: url('../../../assets/vectors/decoration-bg-owner.svg');
+    transform: translateY(-40%);
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: url('../../../assets/images/male-butcher.png');
+    transform: translateY(-10%);
+  }
+
+  .portrait-image-one {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(2%, 10%);
+    z-index: 2;
+  }
+
+  .portrait-image-two {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(37%, 35%);
+    z-index: 1;
+  }
+
+  .owner-text-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    transform: translate(-20%, -100%);
+    z-index: 3;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: url('../../../assets/vectors/icon-petals-2.svg');
+      transform: translate(80%, 30%);
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: url('../../../assets/vectors/icon-petals-2.svg');
+      transform: translate(90%, -490px) rotate(250deg);
+    }
+
+    .owner-title {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+    .owner-signature {
+      font-family: 'Reenie Beanie', cursive;
+      line-height: 72px;
+      font-size: 64px;
+    }
+  }
+}
