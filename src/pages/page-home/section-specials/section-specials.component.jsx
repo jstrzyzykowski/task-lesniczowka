@@ -24,12 +24,13 @@ export default function SectionSpecials() {
        },
      ]}
      breakpoints={{
-      992: {
+      688: {
         plugins: [
+          'infinite',
          {
            resolve: slidesToShowPlugin,
            options: {
-            numberOfSlides: 2
+            numberOfSlides: 1
            }
          },
        ]
