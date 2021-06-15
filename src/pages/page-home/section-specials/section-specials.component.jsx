@@ -27,7 +27,7 @@ export default function SectionSpecials() {
       688: {
         plugins: [
           'infinite',
-          'arrows'
+          'arrows',
          {
            resolve: slidesToShowPlugin,
            options: {
