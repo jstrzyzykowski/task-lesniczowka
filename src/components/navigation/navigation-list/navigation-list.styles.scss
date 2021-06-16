@@ -18,6 +18,14 @@
       transform: translateY(0);
     }
   }
+
+  @media screen and (max-width: 480px) {
+
+    &.mobile-active {
+      top: 80px;
+      transform: translateY(0);
+    }
+  }
 }
 
 .scrolled {

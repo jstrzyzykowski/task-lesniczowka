@@ -13,12 +13,12 @@
   overflow: hidden;
 
   &:hover {
-    .test {
+    .icon-container {
       right: calc(-100% - 40px);
     }
   }
 
-  .test {
+  .icon-container {
     position: absolute;
     top: 0;
     right: 0;

@@ -7,7 +7,7 @@ import './shop-widget.styles.scss';
 export default function ShopWidget() {
   return (
     <div className='shop-widget-container'>
-      <div className='test'>
+      <div className='icon-container'>
         <CartIcon className='cart-icon'/>
         <CartIcon className='cart-icon'/>
       </div>
